@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json({limit: '50mb'}));
 app.use(cookieParser());
 
-const whitelist = ["https://estate-mart.onrender.com", "http://localhost:5173"];
+const whitelist = ["https://grapnel.onrender.com"];
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -46,7 +46,7 @@ const corsOptions = {
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
   credentials: true,
   optionsSuccessStatus: 200,
-  origin: ["https://estate-mart.onrender.com", "http://localhost:5173"],
+  origin: ["https://grapnel.onrender.com"],
 };
 
 app.use(cors(corsOptions));
