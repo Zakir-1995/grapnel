@@ -1,0 +1,38 @@
+.custom_shadow {
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.scrollbar_none
+{
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+.swiper-button-next{
+ content: '';
+ position: absolute;
+ width: 200px;
+ height: 200px;
+ background: #000;
+ left: 50%;
+ top: 50%;
+ z-index: 999;
+ 
+}
+
+.swiper-button-prev{
+  display: block;
+}
